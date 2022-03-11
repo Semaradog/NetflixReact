@@ -1,2 +1,1 @@
-# NetflixReact
-My Netflix-Clone Project
+# This is my Netflix-clone project built with React
