@@ -1,9 +1,18 @@
 import { ArrowDropDown, Notifications, Search } from "@material-ui/icons"
+import { useState } from "react";
 import "./navbar.scss"
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    window.onscroll = () =>{
+        setIsScrolled(window.pageYOffset === 0 ? false : true);
+        return () => (window.onscroll = null);
+    };
+
+    console.log(isScrolled);
   return (
-    <div className="navbar">
+    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
         <div className="container">
             <div className="left">
                 <img src="https://cdn.iphoneincanada.ca/wp-content/uploads/2021/11/Netflix.jpeg" alt="" />
@@ -18,7 +27,14 @@ const Navbar = () => {
                 <span>KID</span>
                 <Notifications className="icon"/>
                 <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" />
-                <ArrowDropDown className="icon"/>
+                <div className="profile">
+                    <ArrowDropDown className="icon"/>
+                    <div className="options">
+                        <span>Settings</span>
+                        <span>Logout</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
