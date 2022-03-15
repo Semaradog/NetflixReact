@@ -25,10 +25,10 @@ export default function Featured({type}) {
                 </select>
             </div>
         )}
-        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" />
+        <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABf07Ihf0o-BL7ks_pjwU1BfBJzxgHA8Ao8jMZ5dfJA8PZ_R7l-NyvQHtTj1TpmnL7lnR2SA8Nv4VGzEO9yJkmJ_fwArM.jpg?r=7c6" alt="" />
 
         <div className="info">
-            <img src="https://picfiles.alphacoders.com/641/64112.png" alt="" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Don%27t_Look_Up_logo.png" alt="" />
       
 
             <span className="desc">
